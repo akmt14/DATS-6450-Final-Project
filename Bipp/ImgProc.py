@@ -18,7 +18,7 @@ class plots():
         min = img_info.img_specs(img)[0]
 
         if len(img.shape)<3:
-            hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[int(max)], ranges=[int(max), int(min)])
+            hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[int(max)], ranges=[int(min), int(max)])
             plt.plot(hist)
             plt.xlim(int(min), int(max))
             plt.title('Histogram for grey image')
@@ -28,7 +28,7 @@ class plots():
         else:
             color = ('b', 'g', 'r')
             for channel, col in enumerate(color):
-                hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[int(max)], ranges=[int(max), int(min)])
+                hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[int(max)], ranges=[int(min), int(max)])
                 plt.plot(hist, color=col, label=col)
                 plt.legend()
                 plt.xlim(int(min), int(max))
