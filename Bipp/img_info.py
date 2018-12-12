@@ -1,4 +1,4 @@
-#Author: Akshay Kamath
+
 def img_specs(img):
     """
     This function returns the basic description of the input image.
