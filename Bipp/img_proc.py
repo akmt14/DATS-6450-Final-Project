@@ -1,3 +1,4 @@
+#Author: Purvi Thakor
 import cv2
 import matplotlib.pyplot as plt
 from Bipp import info
@@ -13,10 +14,10 @@ class Bipp():
         :param img: input is one .jpg image
         :return: a histogram of image pixel values across channels
         """
+        max = info.img_specs(img)[1]
+        min = info.img_specs(img)[0]    
 
         if len(img.shape)<3:
-            max = info.img_specs(img)[1]
-            min = info.img_specs(img)[0]    
             hist = cv2.calcHist(images=[img], channels=[0], mask=None, histSize=[int(max)], ranges=[int(min), int(max)])
             plt.plot(hist)
             plt.xlim(int(min), int(max))
