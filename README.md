@@ -7,8 +7,8 @@ This is a visualization package based on opencv.
 
 - gives the shape of an image (max pixel value, min pixel value, width, height, channels)
 - plots a histogram of the image's pixel values
-- equalizes the input images (improves image contrast)
-- splits colored image into 3 channels (R,B,G)
+- equalizes the input image (improves image contrast)
+- splits colored image into 3 channels (B,G,R)
 
 **Installation**
 
