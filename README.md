@@ -1,5 +1,5 @@
 # DATS-6450-Final-Project
-Basic Image Processing Package
+**Basic Image Processing Package (BIPP)**
 
 This is a visualization package based on opencv.
 
