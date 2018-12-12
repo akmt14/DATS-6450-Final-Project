@@ -12,15 +12,16 @@ Basic functionalities -
 
 Installation
 
-'''
+```
 git clone https://github.com/akmt14/DATS-6450-Final-Project.git
-'''
+```
 
 Example
 
-'''
+```
 import cv2
 from Bipp import ImgProc, img_info, img_equalization, img_splitting
 
 img = cv2.imread("../test_images/colored1.jpg")
 
+```
