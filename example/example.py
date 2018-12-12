@@ -1,7 +1,7 @@
 import cv2
 from Bipp import ImgProc, img_info, img_equalization, img_splitting
 
-img = cv2.imread("../test_images/colored.jpg")
+img = cv2.imread("../test_images/colored1.jpg")
 
 #returns image specifications
 img_info.img_specs(img)
