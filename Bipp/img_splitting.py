@@ -62,3 +62,7 @@ def imgsplit(img):
 
         return
 
+if __name__ == "__main__":
+    imgresize()
+    imgsplit()
+
