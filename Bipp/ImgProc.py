@@ -23,7 +23,7 @@ class plots():
             plt.xlim(int(min), int(max))
             plt.title('Histogram for grey image')
             plt.xlabel("Bins")
-            plt.ylabel("# of Pixels")
+            plt.ylabel("No. of Pixels")
             plt.show(block=True)
         else:
             color = ('b', 'g', 'r')
@@ -34,7 +34,7 @@ class plots():
                 plt.xlim(int(min), int(max))
             plt.title('Histogram for colored image')
             plt.xlabel("Bins")
-            plt.ylabel("# of Pixels")
+            plt.ylabel("No. of Pixels")
             plt.show(block=True)
         return None
 
