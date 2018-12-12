@@ -19,7 +19,7 @@ git clone https://github.com/akmt14/DATS-6450-Final-Project.git
 **Required Packages**
 
 ```
-pip install opencv-python
+pip install opencv
 pip install matplotlib
 ```
 **File Folder Structure**
