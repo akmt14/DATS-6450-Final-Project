@@ -15,3 +15,5 @@ def img_specs(img):
         height, width, channels = img.shape
     return px_min, px_max, height, width, channels
 
+if __name__ == "__main__":
+    img_specs()

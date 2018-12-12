@@ -24,7 +24,7 @@ class plots():
             plt.title('Histogram for grey image')
             plt.xlabel("Bins")
             plt.ylabel("No. of Pixels")
-            plt.show(block=False)
+            plt.show(block=True)
         else:
             color = ('b', 'g', 'r')
             for channel, col in enumerate(color):
@@ -35,7 +35,7 @@ class plots():
             plt.title('Histogram for colored image')
             plt.xlabel("Bins")
             plt.ylabel("No. of Pixels")
-            plt.show(block=False)
+            plt.show(block=True)
         return None
 
 if __name__ == "__main__":

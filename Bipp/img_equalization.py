@@ -15,10 +15,11 @@ def equalize(img):
 
         img_height = img_info.img_specs(img)[2]
         img_width = img_info.img_specs(img)[3]
-        img[:, :] = cv2.equalizeHist(img[:, :])
+        img_1 = img.copy()
+        img_1[:, :] = cv2.equalizeHist(img_1[:, :])
 
-        img = cv2.resize(img, (img_width, img_height), interpolation=cv2.INTER_CUBIC)
-        plt.imshow(img[:, :])
+        img_1 = cv2.resize(img_1, (img_width, img_height), interpolation=cv2.INTER_CUBIC)
+        plt.imshow(img_1[:, :])
         plt.title("after histogram equalization")
         plt.tight_layout()
         plt.show(block=False)
@@ -29,13 +30,17 @@ def equalize(img):
 
         img_height = img_info.img_specs(img)[2]
         img_width = img_info.img_specs(img)[3]
-        img[:, :, 0] = cv2.equalizeHist(img[:, :, 0])
-        img[:, :, 1] = cv2.equalizeHist(img[:, :, 1])
-        img[:, :, 2] = cv2.equalizeHist(img[:, :, 2])
+        img_1 = img.copy()
+        img_1[:, :, 0] = cv2.equalizeHist(img_1[:, :, 0])
+        img_1[:, :, 1] = cv2.equalizeHist(img_1[:, :, 1])
+        img_1[:, :, 2] = cv2.equalizeHist(img_1[:, :, 2])
 
-        img = cv2.resize(img, (img_width, img_height), interpolation=cv2.INTER_CUBIC)
-        plt.imshow(img[:, :, :])
+        img_1 = cv2.resize(img_1, (img_width, img_height), interpolation=cv2.INTER_CUBIC)
+        plt.imshow(img_1[:, :, :])
         plt.title("after histogram equalization")
         plt.tight_layout()
         plt.show(block=False)
-    return img
+    return None
+
+if __name__ == "__main__":
+    equalize()
