@@ -3,23 +3,22 @@ Basic Image Processing Package
 
 This is a visualization package based on opencv.
 
-**Basic functionalities -   
+**Basic functionalities**
 
 - gives the shape of an image (max pixel value, min pixel value, width, height, channels)
 - plots a histogram of the image's pixel values
 - equalizes the input images (improves image contrast)
 - splits colored image into 3 channels (R,B,G)
 
-**Installation
+**Installation**
 
 ```
 git clone https://github.com/akmt14/DATS-6450-Final-Project.git
 ```
 
-**Required Packages
+**Required Packages**
 
 ```
 pip install opencv-python
 pip install matplotlib
-pip
 ```
