@@ -22,3 +22,8 @@ git clone https://github.com/akmt14/DATS-6450-Final-Project.git
 pip install opencv-python
 pip install matplotlib
 ```
+**File Folder Structure**
+
+![tree](https://github.com/akmt14/DATS-6450-Final-Project/blob/master/extra/tree.JPG)
+
+To test the example.py, please maintain the file folder structure as shown in the image above.
